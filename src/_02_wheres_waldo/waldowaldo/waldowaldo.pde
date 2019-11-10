@@ -14,7 +14,7 @@ void draw() {
       println("X: " + mouseX + " Y: " + mouseY); 
 
       // If the mouse is on Waldo, print “Waldo found!”
-      if(mouseX == 646 && mouseY == 446){
+      if(mouseX > 630 && mouseX < 660 && mouseY < 535 && mouseY > 400){
         println("Waldo found!");
         playWoohoo();
       }
@@ -23,6 +23,9 @@ void draw() {
       // Change the name of the sound file if you need to 
       // If the mouse is pressed and they’re not on Waldo, play “Doh”
       // Change the name of the sound file if you need to 
+      else if(mousePressed && mouseX != 646 && mouseY != 448){
+        playDoh();
+      }
 }
 
 void playWoohoo() {
