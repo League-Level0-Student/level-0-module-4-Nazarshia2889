@@ -14,11 +14,25 @@ public class SleepyHead {
         
         /* You MUST use the above boolean variables in your code */
         
-        /*
-         * Ask the user for these values using a confirm dialog like the one below
-         * JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+        
+         /*Ask the user for these values using a confirm dialog like the one below
          */
-    
+         
+         
+         
+         int result = JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+         if(result == JOptionPane.YES_OPTION) {
+        	 int sleep = JOptionPane.showConfirmDialog(null, "Are you on vacation?", null, JOptionPane.YES_NO_OPTION);
+        	 if(sleep == JOptionPane.YES_OPTION) {
+        		 JOptionPane.showMessageDialog(null, "You can sleep in.");
+        	 }
+        	 else if(sleep == JOptionPane.NO_OPTION) {
+        		 JOptionPane.showMessageDialog(null, "Get up lazybones!");
+        	 }
+         }
+         else if(result == JOptionPane.NO_OPTION) {
+        	 JOptionPane.showMessageDialog(null, "You can sleep in.");
+         }
 
 
         /*

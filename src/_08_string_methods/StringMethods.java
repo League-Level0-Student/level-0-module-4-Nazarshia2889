@@ -8,7 +8,16 @@ public class StringMethods {
 	public static void main(String[] args) {
 		
 		// 1. Create a String variable and initialize it to whatever you want
-
+		String x = "Games";
+		System.out.println(x.charAt(3));
+		System.out.println(x.length());
+		for(int i = 0; i<x.length(); i++) {
+			System.out.println(x.charAt(i));
+			if('m'==x.charAt(i)) {
+				System.out.println(i);
+			}
+		}
+		
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
 		
