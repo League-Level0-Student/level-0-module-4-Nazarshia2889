@@ -22,6 +22,11 @@ public class FruitQuiz extends KeyAdapter {
 	public void keyPressed(KeyEvent arg0) {
 		int keyCode = arg0.getKeyCode();
 		// 1. Print out the key code variable
+		System.out.println(keyCode);
+		
+		int A = 0;
+		int b = 0;
+		int C = 0;
 
 		// 2. Make 3 int variables that hold the key codes for A, b, and C
 		
